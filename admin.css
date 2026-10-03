@@ -1,0 +1,40 @@
+
+.admin-wrap h1 { color: #f6f0e5; }
+.admin-wrap h1 em { color: #d7b56d; }
+.admin-form {
+  background: #1c1a16;
+  border: 1px solid #514938;
+  padding: 20px;
+  border-radius: 6px;
+}
+.admin-form label {
+  color: #d7b56d;
+  margin-bottom: -8px;
+}
+.admin-form button { margin-top: 8px; }
+.admin-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: #1c1a16;
+  border-radius: 5px;
+}
+.admin-list-item img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+}
+.admin-list-item button {
+  background: transparent;
+  border: 1px solid #d7b56d;
+  color: #d7b56d;
+  padding: 8px;
+  cursor: pointer;
+}
+.note {
+  color: #d7b56d;
+  margin-top: 25px;
+  font-size: 14px;
+}
