@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Store Admin | Immersive Luxury Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="announcement">STORE MANAGEMENT</div>
+  <main class="admin-wrap">
+    <a href="index.html">← Back to Store</a>
+    <h1>Store <em>Admin</em></h1>
+    <p>Add products and manage your catalogue in this browser.</p>
+
+    <form id="productForm" class="admin-form">
+      <input type="hidden" id="editId">
+      <label>Product name</label>
+      <input id="name" required placeholder="e.g. Premium Cotton">
+      <label>Category</label>
+      <select id="cat">
+        <option> Ladies </option>
+        <option> Gents </option>
+      </select>
+      <label>Fabric type</label>
+      <input id="fabricType" required placeholder="Cotton, Lawn, Boski...">
+      <label>Price in Rs.</label>
+      <input id="price" type="number" min="1" required>
+      <label>Product image URL</label>
+      <input id="image" type="url" required placeholder="https://...">
+      <button class="button" type="submit">Save Product</button>
+      <button class="button secondary" type="button" id="cancelEdit">Clear Form</button>
+    </form>
+
+    <hr>
+    <h2>Current Products</h2>
+    <div id="adminProducts"></div>
+    <button class="button secondary" id="exportBtn">Export Catalogue Backup</button>
+    <p class="note">Important: this demo saves changes only in this browser. It does not update the public store for all visitors.</p>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>
